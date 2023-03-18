@@ -13,11 +13,27 @@
 // console.log("Type of undefined: " + typeof(undefinedVar))
 
 
-const rate = 0.93;
-
-
 const year = prompt("1.Enter your birth year");
 alert(`Your age:${2023 - year}`);
 
+
+
 const radius = prompt("2.Input radius");
 alert(`Area is: ${3.14 * radius * radius}`)
+
+
+
+const dist_time = prompt("3.Input distance in km between towns and time(use \",\")");
+dist = dist_time.split(",")[0];
+time = dist_time.split(",")[1];
+alert(`Your speed: ${dist / time}`);
+
+
+const rate = 0.93;
+const dollar = prompt("4.Input dollars");
+alert(`You have: ${dollar * rate}`);
+
+
+const flash_drive = prompt("5.Input capacity of USB flash drive(GB)");
+number = flash_drive * 1024 / 840;
+alert(`There can be saved ${Math.floor(number)}`);
