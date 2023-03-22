@@ -24,8 +24,8 @@ alert(`Area is: ${3.14 * radius * radius}`)
 
 
 const dist_time = prompt("3.Input distance in km between towns and time(use \",\")");
-dist = dist_time.split(",")[0];
-time = dist_time.split(",")[1];
+let dist = dist_time.split(",")[0];
+let time = dist_time.split(",")[1];
 alert(`Your speed: ${dist / time}`);
 
 
