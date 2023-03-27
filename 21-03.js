@@ -10,13 +10,13 @@ const time = prompt("Input current time in XX:XX format");
 let hour = time.split(":")[0];
 let min = time.split(":")[1];
 
-let hour_til_end = 23 - hour;
-let min_til_end = 60 - min;
-if(min_til_end == 60) {
-    hour_til_end += 1;
-    min_til_end = "00";
+let hourTilEnd = 23 - hour;
+let minTilEnd = 60 - min;
+if(minTilEnd == 60) {
+    hourTilEnd += 1;
+    minTilEnd = "00";
 }
-alert(`Time until the end of the day ${hour_til_end}:${min_til_end}`);
+alert(`Time until the end of the day ${hourTilEnd}:${minTilEnd}`);
 
 
 ////////////////////////////////////////////////////////////////

@@ -23,9 +23,9 @@ alert(`Area is: ${3.14 * radius * radius}`)
 
 
 
-const dist_time = prompt("3.Input distance in km between towns and time(use \",\")");
-let dist = dist_time.split(",")[0];
-let time = dist_time.split(",")[1];
+const distTime = prompt("3.Input distance in km between towns and time(use \",\")");
+let dist = distTime.split(",")[0];
+let time = distTime.split(",")[1];
 alert(`Your speed: ${dist / time}`);
 
 
@@ -34,6 +34,6 @@ const dollar = prompt("4.Input dollars");
 alert(`You have: ${dollar * rate}`);
 
 
-const flash_drive = prompt("5.Input capacity of USB flash drive(GB)");
-number = flash_drive * 1024 / 840;
+const flashDrive = prompt("5.Input capacity of USB flash drive(GB)");
+number = flashDrive * 1024 / 840;
 alert(`There can be saved ${Math.floor(number)}`);
