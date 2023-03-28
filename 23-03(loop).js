@@ -53,7 +53,13 @@ let dayName;
             break;
             case 7: dayName = "Sunday";
         }
+
+
+
         if(days == 7) days = 0;
         days++;
-        alert(`${dayName}. Do you want to see the next day?`);
+        let close = confirm(`${dayName}. Do you want to see the next day? Press 'Cancel' to exit.`);
+        if(!close) {
+            break;
+        }
 };
