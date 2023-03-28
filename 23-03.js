@@ -31,6 +31,11 @@ if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
 } else alert("It isnt leap");
 
 ///////////////////////////
+//
+// let date = prompt("Input date(only day)");
+// alert(date <= 30 ? `Tomorrow will be ${parseInt(date) + 1}` : "Tomorrow will be 1");
 
-let date = prompt("Input date(only day)");
-alert(date <= 30 ? `Tomorrow will be ${parseInt(date) + 1}` : "Tomorrow will be 1");
+let date = prompt("Input date(YYYY-MM-DD)");
+let dateObj = new Date(date)
+dateObj.setDate(dateObj.getDate() + 1)
+alert(`Tomorrow will be ${dateObj.toString().slice(4,10)}`);
