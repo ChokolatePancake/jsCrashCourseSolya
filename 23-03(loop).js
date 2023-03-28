@@ -34,31 +34,7 @@ Even numbers: ${10 - odd}`)
 
 ///////////////////////////////////////
 
-// Define a function that displays an alert box with a custom message and button
-function showAlert(message, buttonText, buttonCallback) {
-    // Create the alert box container element
-    var alertBox = document.createElement('div');
-    alertBox.classList.add('alert-box');
-
-    // Create the message element
-    var messageElement = document.createElement('p');
-    messageElement.textContent = message;
-
-    // Create the button element
-    var buttonElement = document.createElement('button');
-    buttonElement.textContent = buttonText;
-    buttonElement.addEventListener('click', buttonCallback);
-
-    // Add the message and button elements to the alert box
-    alertBox.appendChild(messageElement);
-    alertBox.appendChild(buttonElement);
-
-    // Add the alert box to the page
-    document.body.appendChild(alertBox);
-}
-let days = 1;if(close()) {
-            break;
-        }
+let days = 1;
 let dayName;
 
     while (true) {
