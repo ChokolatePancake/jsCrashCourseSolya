@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+  <link rel="stylesheet" href="../bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light mb-3" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input list="unic-models" class="form-control me-2" id="search-q" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" id="search">Search</button>
+        <datalist id="unic-models"></datalist>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container">
+<h2>Car</h2>
+<form id="Cars">
+  <div class="row">
+    <div class="col mb-3">
+      <label for="model" class="form-label">Model</label>
+      <input type="text" id="model" class="form-control" placeholder="Enter Model">
+    </div>
+    <div class="col mb-3">
+      <label for="carBody" class="form-label">Body</label>
+      <select id="carBody" class="form-select">
+        <option value="Hatchback">Hatchback</option>
+        <option value="Coupe">Coupe</option>
+        <option value="Minivan">Minivan</option>
+        <option value="SUV">SUV</option>
+        <option value="Crossover">Crossover</option>
+        <option value="Sedan">Sedan</option>
+        <option value="Estate">Estate</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col mb-3">
+      <label for="year" class="form-label">Year</label>
+      <input type="number" id="year" class="form-control" placeholder="Enter year">
+    </div>
+    <div class="col mb-3">
+      <label for="date" class="form-label">Date of Purchase</label>
+      <input type="date" id="date" class="form-control">
+    </div>
+  </div>
+  <div class="row">
+    <div class="mb-3 col-1">
+      <label for="color" class="form-label">Color</label>
+      <input type="color" height="20" id="color" class="form-control form-control-color">
+    </div>
+    <div class="mb-3 col-1">
+    <label for="status" class="form-label">Status</label>
+    <div class="form-switch form-check">
+      <input class="form-check-input" type="checkbox" id="status">
+    </div>
+  </div>
+    <div class="mb-3 col-10">
+      <label for="price" class="form-label">Price</label>
+      <input type="number" id="price" class="form-control" placeholder="Enter Price">
+    </div>
+
+  </div>
+    <button type="button" id="add" class="btn btn-outline-success">Add</button>
+
+</form>
+</div>
+
+<div class="container">
+<h2 class="mt-3">Car List</h2>
+<table class="table table-striped" id="car-table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Model</th>
+    <th scope="col">Body</th>
+    <th scope="col">Year</th>
+    <th scope="col">Color</th>
+    <th scope="col">Status</th>
+    <th scope="col">Price</th>
+    <th scope="col">Date of Purchase</th>
+  </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<button type="button" id="delete" class="btn btn-outline-danger">Clear</button>
+</div>
+<script src="Cars2.js"/>
+
+<script src="../bootstrap.js"/>
+</body>
+</html>
